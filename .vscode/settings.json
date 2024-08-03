@@ -11,5 +11,6 @@
     },
     "[gradle]": {
         "editor.defaultFormatter": "richardwillis.vscode-spotless-gradle"
-    }
+    },
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
