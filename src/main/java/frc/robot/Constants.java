@@ -85,7 +85,7 @@ public class Constants {
         private static final boolean kInvertRightSide = true;
 
         private static final String kCANbusName = "";
-        private static final int kPigeonId = 31;
+        public static final int kPigeonId = 31;
 
         // These are only used for simulation
         private static final double kSteerInertia = 0.00001;
