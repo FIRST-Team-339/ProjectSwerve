@@ -16,7 +16,6 @@ import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.Constants.*;
 import frc.robot.commands.FlipPizzaBoxUp;
-import frc.robot.commands.Sleep;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 import frc.robot.subsystems.PizzaBoxSubsystem;
 
@@ -88,9 +87,6 @@ public class RobotContainer {
     }
 
     private void configureNamedCommands() {
-        NamedCommands.registerCommand("Sleep 1 Second", new Sleep(1));
-        NamedCommands.registerCommand("Sleep 5 Seconds", new Sleep(5));
-
         NamedCommands.registerCommand(
                 "Flip Pizza Box Up", new FlipPizzaBoxUp(this.pizzaBoxSubsystem));
         NamedCommands.registerCommand(
