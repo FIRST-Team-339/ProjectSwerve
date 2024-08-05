@@ -204,4 +204,15 @@ public class Constants {
         public static final int kDriverControllerId = 0;
         public static final int kOperatorControllerId = 1;
     }
+
+    public static class PizzaBoxConstants {
+        public static final boolean kFeatureEnabled = false;
+
+        public static final int kLeftPistonForwardPort = 2;
+        public static final int kLeftPistonReversePort = 3;
+        public static final int kRightPistonForwardPort = 6;
+        public static final int kRightPistonReversePort = 7;
+
+        public static final boolean kUpByDefault = true;
+    }
 }
