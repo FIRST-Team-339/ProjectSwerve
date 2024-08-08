@@ -13,11 +13,11 @@ import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
-import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.Constants.*;
 import frc.robot.commands.FlipPizzaBoxUp;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 import frc.robot.subsystems.PizzaBoxSubsystem;
+import frc.team339.hardware.CommandController;
 
 public class RobotContainer {
     private double MaxSpeed =
@@ -26,8 +26,10 @@ public class RobotContainer {
             1.5 * Math.PI; // 3/4 of a rotation per second max angular velocity
 
     /* Setting up bindings for necessary control of the swerve drive platform */
-    private final CommandXboxController driverController =
-            new CommandXboxController(ControllerConstants.kDriverControllerId); // My joystick
+    private final CommandController driverController =
+            new CommandController(ControllerConstants.kDriverControllerId); // My joystick
+    private final CommandController operatorController =
+            new CommandController(ControllerConstants.kOperatorControllerId); // My joystick
     private final CommandSwerveDrivetrain drivetrain = TunerConstants.DriveTrain; // My drivetrain
 
     private final SwerveRequest.FieldCentric drive =
@@ -63,7 +65,10 @@ public class RobotContainer {
                         // X (left)
                         ));
 
-        driverController.a().whileTrue(drivetrain.applyRequest(() -> brake));
+        driverController
+                .leftBumper()
+                .or(driverController.rightTrigger())
+                .whileTrue(drivetrain.applyRequest(() -> brake));
         driverController
                 .b()
                 .whileTrue(
