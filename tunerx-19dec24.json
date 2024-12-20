@@ -1,0 +1,182 @@
+{
+    "Version": "1.0.0.0",
+    "LastState": 11,
+    "Modules": [
+        {
+            "ValidatedSteerId": 22,
+            "ValidatedDriveId": 21,
+            "ValidatedEncoderId": 11,
+            "IsEncoderOffsetConfigured": true,
+            "IsDeviceSelectionCompleted": true,
+            "IsConfigurationCompleted": true,
+            "ModuleName": "Front Left",
+            "ModuleId": 0,
+            "Encoder": {
+                "Id": 11,
+                "Name": "Front Left CANCoder",
+                "Model": "CANCoder vers. H",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "SteerMotor": {
+                "Id": 22,
+                "Name": "Front Left Swerve",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "DriveMotor": {
+                "Id": 21,
+                "Name": "Front Left Drive",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "IsSteerInverted": true,
+            "EncoderOffset": 0.458740234375,
+            "DriveMotorSelectionState": 1,
+            "SteerMotorSelectionState": 1,
+            "SteerEncoderSelectionState": 1,
+            "IsModuleValidationComplete": true
+        },
+        {
+            "ValidatedSteerId": 24,
+            "ValidatedDriveId": 23,
+            "ValidatedEncoderId": 12,
+            "IsEncoderOffsetConfigured": true,
+            "IsDeviceSelectionCompleted": true,
+            "IsConfigurationCompleted": true,
+            "ModuleName": "Front Right",
+            "ModuleId": 1,
+            "Encoder": {
+                "Id": 12,
+                "Name": "Front Right CANCoder ",
+                "Model": "CANCoder vers. H",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "SteerMotor": {
+                "Id": 24,
+                "Name": "Front Right Swerve",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "DriveMotor": {
+                "Id": 23,
+                "Name": "Front Right Drive",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "IsSteerInverted": true,
+            "EncoderOffset": 0.44140625,
+            "DriveMotorSelectionState": 1,
+            "SteerMotorSelectionState": 1,
+            "SteerEncoderSelectionState": 1,
+            "IsModuleValidationComplete": true
+        },
+        {
+            "ValidatedSteerId": 26,
+            "ValidatedDriveId": 25,
+            "ValidatedEncoderId": 13,
+            "IsEncoderOffsetConfigured": true,
+            "IsDeviceSelectionCompleted": true,
+            "IsConfigurationCompleted": true,
+            "ModuleName": "Back Left",
+            "ModuleId": 2,
+            "Encoder": {
+                "Id": 13,
+                "Name": "Back Left CANCoder",
+                "Model": "CANCoder vers. H",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "SteerMotor": {
+                "Id": 26,
+                "Name": "Back Left Swerve",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "DriveMotor": {
+                "Id": 25,
+                "Name": "Back Left Drive",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "IsSteerInverted": true,
+            "EncoderOffset": 0.00048828125,
+            "DriveMotorSelectionState": 1,
+            "SteerMotorSelectionState": 1,
+            "SteerEncoderSelectionState": 1,
+            "IsModuleValidationComplete": true
+        },
+        {
+            "ValidatedSteerId": 28,
+            "ValidatedDriveId": 27,
+            "ValidatedEncoderId": 14,
+            "IsEncoderOffsetConfigured": true,
+            "IsDeviceSelectionCompleted": true,
+            "IsConfigurationCompleted": true,
+            "ModuleName": "Back Right",
+            "ModuleId": 3,
+            "Encoder": {
+                "Id": 14,
+                "Name": "Back Right CANCoder",
+                "Model": "CANCoder",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "SteerMotor": {
+                "Id": 28,
+                "Name": "Back Right Swerve",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "DriveMotor": {
+                "Id": 27,
+                "Name": "Back Right Drive",
+                "Model": "Talon FX",
+                "CANbus": "rio",
+                "CANbusFriendly": ""
+            },
+            "IsSteerInverted": true,
+            "EncoderOffset": -0.220458984375,
+            "DriveMotorSelectionState": 1,
+            "SteerMotorSelectionState": 1,
+            "SteerEncoderSelectionState": 1,
+            "IsModuleValidationComplete": true
+        }
+    ],
+    "SwerveOptions": {
+        "IsValidConfiguration": true,
+        "Gyro": {
+            "Id": 31,
+            "Name": "Pigeon 2 vers. S",
+            "Model": "Pigeon 2 vers. S",
+            "CANbus": "rio",
+            "CANbusFriendly": ""
+        },
+        "IsValidGyroCANbus": true,
+        "VerticalTrackSizeInches": 22.25,
+        "HorizontalTrackSizeInches": 22.25,
+        "WheelRadiusInches": 2.0,
+        "IsLeftSideInverted": false,
+        "IsRightSideInverted": true,
+        "SwerveModuleType": 4,
+        "SwerveModuleConfiguration": {
+            "_CouplingRatio": 3.5714285714285716,
+            "_CustomName": "L2",
+            "SteerRatio": 21.428571428571427,
+            "Flipped": 4,
+            "DriveRatio": 6.746031746031747,
+            "CouplingRatio": 3.5714285714285716,
+            "CustomName": "L2"
+        },
+        "HasVerifiedSteer": true,
+        "HasVerifiedDrive": true
+    }
+}
